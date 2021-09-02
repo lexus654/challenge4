@@ -1,0 +1,14 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// This is the mobile size 375px by 667px
+@media (max-width: 1440px) {
+  body {
+    background-color: rgb(193, 193, 255);
+  }
+}
