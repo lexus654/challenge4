@@ -19,25 +19,114 @@
       background-image: url(/images/bg-pattern-intro.svg);
       background-image: url(/images/bg-pattern-intro.svg),
         linear-gradient(
-          to left,
+          to right,
+          $Mobile-very-light-red,
           $Light-red,
-          $Mobile-light-red,
-          $Mobile-very-light-red
+          $Mobile-light-red
         );
       background-repeat: no-repeat;
-      background-size: 2500px 2500px;
-      background-position: -200px -1000px;
+      background-size: 3000px 3000px;
+      background-position: -400px -1250px;
+      border-bottom-left-radius: 150px;
+      // display
+      .firstpage__navbar,
+      .firstpage__navbar__leftside,
+      .firstpage__navbar__rightside,
+      .firstpage__navbar__leftside__list,
+      .firstpage__textpart {
+        display: flex;
+      }
+      .firstpage__navbar {
+        justify-content: space-between;
+        padding: 70px 200px;
+      }
+      // logo and list product company and connect
+      .firstpage__navbar__leftside {
+        .firstpage__navbar__leftside__logo {
+          margin-right: 60px;
+          margin-left: -20px;
+        }
+        li {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 700;
+          font-size: 1.1rem;
+          color: $White;
+          margin: 10px 20px;
+          list-style: none;
+        }
+      }
 
-      // .firstpage--color {
-      //   z-index: -100;
-      //   width: 100vw;
-      //   height: 600px;
-      //   background-image: linear-gradient(
-      //     to right,
-      //     $Mobile-light-red,
-      //     $Mobile-very-light-red
-      //   );
-      // }
+      // sign up and login
+      .firstpage__navbar__rightside {
+        &__login {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 700;
+          color: $White;
+          margin-right: 20px;
+          font-size: 1.1rem;
+        }
+        &__signup {
+          padding-top: 10px;
+          margin-top: -10px;
+          text-align: center;
+          color: $Light-red;
+          font-family: "Ubuntu", sans-serif;
+
+          font-size: 1.1rem;
+          font-weight: 700;
+          margin-left: 20px;
+          background-color: white;
+          border-radius: 20px;
+          width: 100px;
+          height: 40px;
+        }
+      }
+      // text part
+      .firstpage__textpart {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Overpass", sans-serif;
+        margin-top: 50px;
+        &__tagline {
+          color: $White;
+          font-weight: 600;
+          font-size: 4rem;
+        }
+        &__text {
+          color: $White;
+          font-size: 1.2rem;
+          margin-top: 20px;
+        }
+        &__start {
+          margin-top: 60px;
+          display: flex;
+          flex-direction: row;
+          // styles
+          &--start,
+          &--learn {
+            font-family: "Ubuntu", sans-serif;
+            padding-top: 10px;
+            margin-top: -10px;
+            text-align: center;
+            font-weight: 700;
+            width: 130px;
+            height: 40px;
+          }
+          &--start {
+            margin-right: 10px;
+            color: $Light-red;
+            background-color: white;
+            border-radius: 20px;
+          }
+          &--learn {
+            color: $White;
+            border-radius: 20px;
+            border: $White 1px solid;
+            margin-left: 10px;
+          }
+        }
+      }
     }
   }
 }
