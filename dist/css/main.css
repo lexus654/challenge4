@@ -5,7 +5,6 @@
 
 @media (max-width: 1440px) {
   body {
-    background-color: #c1c1ff;
     width: 100vw;
     height: 1024px; }
     body .firstpage {
@@ -91,4 +90,20 @@
             color: white;
             border-radius: 20px;
             border: white 1px solid;
-            margin-left: 10px; } }
+            margin-left: 10px; }
+    body .secondpage,
+    body .secondpage__container__column,
+    body .secondpage__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+    body .secondpage__container {
+      flex-direction: row; }
+    body .secondpage {
+      width: 100vw;
+      height: 900px;
+      background-color: #f4f4f4; }
+      body .secondpage .secondpage__img {
+        height: 90%;
+        width: 90%; } }

@@ -9,7 +9,7 @@
 // This is the mobile size 375px by 667px
 @media (max-width: 1440px) {
   body {
-    background-color: rgb(193, 193, 255);
+    // background-color: rgb(193, 193, 255);
     width: 100vw;
     height: 1024px;
     .firstpage {
@@ -28,6 +28,7 @@
       background-size: 3000px 3000px;
       background-position: -400px -1250px;
       border-bottom-left-radius: 150px;
+
       // display
       .firstpage__navbar,
       .firstpage__navbar__leftside,
@@ -126,6 +127,30 @@
             margin-left: 10px;
           }
         }
+      }
+    }
+    // flex styles
+    .secondpage,
+    .secondpage__container__column,
+    .secondpage__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .secondpage__container {
+      flex-direction: row;
+    }
+    // second page
+    .secondpage {
+      width: 100vw;
+      height: 900px;
+      background-color: #f4f4f4;
+      .secondpage__img {
+        height: 90%;
+        width: 90%;
+      }
+      .secondpage__container__column {
       }
     }
   }
