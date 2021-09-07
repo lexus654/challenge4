@@ -9,7 +9,9 @@
 // This is the mobile size 375px by 667px
 @media (max-width: 1440px) {
   body {
-    // background-color: rgb(193, 193, 255);
+    // font-family: "Ubuntu", sans-serif;
+    //       font-family: "Overpass", sans-serif;
+    // // background-color: rgb(193, 193, 255);
     width: 100vw;
     height: 1024px;
     .firstpage {
@@ -130,27 +132,71 @@
       }
     }
     // flex styles
-    .secondpage,
-    .secondpage__container__column,
-    .secondpage__container {
+    .secondpage {
+      .secondpage__title {
+        font-size: 2rem;
+        font-family: "Overpass", sans-serif;
+        font-weight: 600;
+        color: $Very-dark-blue;
+        position: relative;
+        top: 100px;
+      }
+      width: 100%;
+      height: 800px;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-    }
-    .secondpage__container {
-      flex-direction: row;
-    }
-    // second page
-    .secondpage {
-      width: 100vw;
-      height: 900px;
       background-color: #f4f4f4;
-      .secondpage__img {
-        height: 90%;
-        width: 90%;
-      }
-      .secondpage__container__column {
+      .secondpage__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        .secondpage__img {
+          width: auto;
+          height: 85%;
+          position: relative;
+          left: 100px;
+        }
+        .secondpage__container__column {
+          position: relative;
+          left: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 150px;
+
+          .secondpage__container__column__text--second {
+            margin-top: 30px;
+          }
+          .secondpage__container__column__text--bold {
+            position: relative;
+            left: 50px;
+            width: 100%;
+
+            color: $Very-dark-blue;
+            font-size: 1.7rem;
+            font-family: "Overpass", sans-serif;
+            font-weight: 600;
+            margin-bottom: 30px;
+            width: 500px;
+            height: 10px;
+          }
+          .secondpage__container__column__text {
+            margin-left: 100px;
+            width: 100%;
+            color: $Very-dark-grayish-blue;
+            font-family: "Overpass", sans-serif;
+            font-size: 1.1rem;
+
+            width: 500px;
+            height: 200px;
+          }
+        }
       }
     }
   }
