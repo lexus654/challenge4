@@ -7,6 +7,15 @@
   body {
     width: 100vw;
     height: 1024px; }
+    body .arrow-position {
+      position: relative;
+      top: 2px;
+      left: 2px; }
+    body .open {
+      cursor: pointer; }
+    body .open:focus-within {
+      transform: rotate(10deg);
+      transition: all 0.5s ease-in-out; }
     body .firstpage {
       width: 100vw;
       height: 600px;
