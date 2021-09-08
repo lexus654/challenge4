@@ -23,9 +23,27 @@
         transform: rotate(180deg);
         transition: all 0.3s ease-in-out;
       }
+      .list {
+        width: 70px;
+        height: 100px;
+        background-color: wheat;
+      }
+      .hide {
+        display: none;
+      }
+      .show {
+        display: block;
+      }
     </style>
   </head>
   <body>
-    <button><i class="fas fa-chevron-down"></i></button>
+    <button class="btn"><i class="fas fa-chevron-down"></i></button>
+    <div id="list" class="list hide">
+      <ul>
+        <li>Hello</li>
+        <li>World</li>
+      </ul>
+    </div>
+    <script src="/testfile/test.js"></script>
   </body>
 </html>
