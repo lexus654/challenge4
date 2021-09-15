@@ -262,8 +262,8 @@
       background-image: url(/images/bg-pattern-intro.svg);
       background-image: url(/images/bg-pattern-intro.svg), linear-gradient(to right, #ff8f70, #ff525d, #ff3d54);
       background-repeat: no-repeat;
-      background-size: 3000px 3000px;
-      background-position: -400px -1250px;
+      background-size: 1200px 1200px;
+      background-position: -220px -180px, 0 0;
       border-bottom-left-radius: 150px; }
       body .firstpage .firstpage__navbar,
       body .firstpage .firstpage__navbar__leftside,
