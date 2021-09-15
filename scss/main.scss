@@ -78,6 +78,10 @@
 
       // sign up and login
       .firstpage__navbar__rightside {
+        // this is the hamburger menu, this is notinclude in the desktop view
+        .firstpage__navbar__rightside__hamburger {
+          display: none;
+        }
         &__login {
           font-family: "Ubuntu", sans-serif;
           font-weight: 700;
@@ -327,14 +331,14 @@
 // /////////////////////////////////////////////////////////////////////////////////////////////////
 // This is the mobile size 375px by 667px
 
-@media (max-width: 1440px) {
+@media (max-width: 375px) {
   body {
     // font-family: "Ubuntu", sans-serif;
     //       font-family: "Overpass", sans-serif;
     // // background-color: rgb(193, 193, 255);
     width: 100vw;
     height: 1024px;
-    background-color: #f4f4f4;
+    background-color: #050505;
 
     // span arrow styles
     .arrow-position {
@@ -378,15 +382,17 @@
       }
       .firstpage__navbar {
         justify-content: space-between;
-        padding: 70px 200px;
+        padding: 40px 30px;
       }
       // logo and list product company and connect
       .firstpage__navbar__leftside {
         .firstpage__navbar__leftside__logo {
           margin-right: 60px;
-          margin-left: -20px;
+          margin-left: 0;
         }
+        // the list is not included
         li {
+          display: none;
           font-family: "Ubuntu", sans-serif;
           font-weight: 700;
           font-size: 1.1rem;
@@ -396,9 +402,34 @@
         }
       }
 
-      // sign up and login
+      // sign up and login this will be remove also in the mobile view
       .firstpage__navbar__rightside {
+        .firstpage__navbar__rightside__hamburger {
+          position: relative;
+          top: 15px;
+          display: inline-block;
+          &--lines {
+            width: 40px;
+            height: 2px;
+            background-color: white;
+          }
+          &--lines::after,
+          &--lines::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: white;
+          }
+          &--lines::before {
+            top: 10px;
+          }
+          &--lines::after {
+            top: -10px;
+          }
+        }
         &__login {
+          display: none;
           font-family: "Ubuntu", sans-serif;
           font-weight: 700;
           color: $White;
@@ -406,6 +437,7 @@
           font-size: 1.1rem;
         }
         &__signup {
+          display: none;
           padding-top: 10px;
           margin-top: -10px;
           text-align: center;
@@ -428,14 +460,19 @@
         align-items: center;
         font-family: "Overpass", sans-serif;
         margin-top: 50px;
+        &__tagline,
+        &__text {
+          text-align: center;
+          padding: 0 30px;
+        }
         &__tagline {
           color: $White;
           font-weight: 600;
-          font-size: 4rem;
+          font-size: 2.2rem;
         }
         &__text {
           color: $White;
-          font-size: 1.2rem;
+          font-size: 1.5rem;
           margin-top: 20px;
         }
         &__start {

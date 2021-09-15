@@ -1,203 +1,244 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- displays site properly based on user's device -->
+    <!-- font awesiome -->
 
-  <!-- font awesiome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <!-- font awesome -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end of fonts -->
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <title>Frontend Mentor | [Blogr]</title>
 
-  <!-- font awesome -->
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
-  <!-- end of fonts -->
-  <link rel="stylesheet" href="dist/css/main.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <link rel="stylesheet" href="dist/css/main.css" />
-  <title>Frontend Mentor | [Blogr]</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <!-- mobile first -->
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
-<!-- mobile first -->
+  <body>
+    <!-- this is the first page -->
+    <section class="firstpage">
+      <div class="div firstpage--color"></div>
+      <nav class="firstpage__navbar">
+        <div class="firstpage__navbar__leftside">
+          <img
+            src="images/logo.svg"
+            alt="Blogr logo"
+            class="firstpage__navbar__leftside__logo"
+          />
+          <ul class="firstpage__navbar__leftside__list">
+            <li class="firstpage__navbar__leftside__list--product">
+              Product
+              <span data-rotate1 class="open arrow-position"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </li>
 
-<body>
-  <!-- this is the first page -->
-  <section class="firstpage">
-    <div class="div firstpage--color"></div>
-    <nav class="firstpage__navbar">
-      <div class="firstpage__navbar__leftside">
-        <img src="images/logo.svg" alt="Blogr logo" class="firstpage__navbar__leftside__logo" />
-        <ul class="firstpage__navbar__leftside__list">
-          <li class="firstpage__navbar__leftside__list--product">
-            Product
-            <span data-rotate1 class="open arrow-position"><i class="fas fa-chevron-down"></i></span>
-          </li>
-
-          <li class="firstpage__navbar__leftside__list--company">
-            Company
-            <span data-rotate2 class="open arrow-position"><i class="fas fa-chevron-down"></i></span>
-          </li>
-          <li class="firstpage__navbar__leftside__list--connect">
-            Connect
-            <span data-rotate3 class="open arrow-position"><i class="fas fa-chevron-down"></i></span>
-          </li>
-        </ul>
-      </div>
-      <div class="firstpage__navbar__rightside">
-        <p class="firstpage__navbar__rightside__login">Login</p>
-        <p class="firstpage__navbar__rightside__signup">Sign-up</p>
-      </div>
-    </nav>
-    <div class="firstpage__textpart">
-      <p class="firstpage__textpart__tagline">A modern publishing platform</p>
-      <p class="firstpage__textpart__text">
-        Grow your audience and build your online brand
-      </p>
-      <div class="firstpage__textpart__start">
-        <p class="firstpage__textpart__start--start">Start for Free</p>
-        <p class="firstpage__textpart__start--learn">Learn More</p>
-      </div>
-    </div>
-  </section>
-  <!-- second page -->
-
-  <section class="secondpage">
-    <p class="secondpage__title">Designed for the future</p>
-    <div class="secondpage__container">
-      <div class="secondpage__container__column">
-        <p class="secondpage__container__column__text--bold">
-          Introducing an extensible editor
+            <li class="firstpage__navbar__leftside__list--company">
+              Company
+              <span data-rotate2 class="open arrow-position"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </li>
+            <li class="firstpage__navbar__leftside__list--connect">
+              Connect
+              <span data-rotate3 class="open arrow-position"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </li>
+          </ul>
+        </div>
+        <div class="firstpage__navbar__rightside">
+          <p class="firstpage__navbar__rightside__login">Login</p>
+          <p class="firstpage__navbar__rightside__signup">Sign-up</p>
+          <div class="firstpage__navbar__rightside__hamburger">
+            <div class="firstpage__navbar__rightside__hamburger--lines"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="firstpage__textpart">
+        <p class="firstpage__textpart__tagline">A modern publishing platform</p>
+        <p class="firstpage__textpart__text">
+          Grow your audience and build your online brand
         </p>
-        <p class="secondpage__container__column__text">
-          Blogr features an exceedingly intuitive interface which lets you
-          focus on one thing: creating content. The editor supports management
-          of multiple blogs and allows easy manipulation of embeds such as
-          images, videos, and Markdown. Extensibility with plugins and themes
-          provide easy ways to add functionality or change the looks of a
-          blog.
-        </p>
-        <p class="
+        <div class="firstpage__textpart__start">
+          <p class="firstpage__textpart__start--start">Start for Free</p>
+          <p class="firstpage__textpart__start--learn">Learn More</p>
+        </div>
+      </div>
+    </section>
+    <!-- second page -->
+
+    <section class="secondpage">
+      <p class="secondpage__title">Designed for the future</p>
+      <div class="secondpage__container">
+        <div class="secondpage__container__column">
+          <p class="secondpage__container__column__text--bold">
+            Introducing an extensible editor
+          </p>
+          <p class="secondpage__container__column__text">
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog.
+          </p>
+          <p
+            class="
               secondpage__container__column__text--bold
               secondpage__container__column__text--second
-            ">
-          Robust content management
-        </p>
-        <p class="secondpage__container__column__text">
-          Flexible content management enables users to easily move through
-          posts. Increase the usability of your blog by adding customized
-          categories, sections, format, or flow.
+            "
+          >
+            Robust content management
+          </p>
+          <p class="secondpage__container__column__text">
+            Flexible content management enables users to easily move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format, or flow.
+          </p>
+        </div>
+        <img
+          class="secondpage__img"
+          src="images/illustration-editor-desktop.svg"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- phonepage/thirdpage -->
+    <section class="phonepage">
+      <img
+        src="images/illustration-phones.svg"
+        alt=""
+        class="phonepage__phone"
+      />
+      <div class="phonepage__column">
+        <p class="phonepage__column__title">State of the Art Infrastructure</p>
+        <p class="phonepage__column__text">
+          With reliability and speed in mind, worldwide data centers provide the
+          backbone for ultra-fast connectivity. This ensures your site will load
+          instantly, no matter where your readers are, keeping your site
+          competitive.
         </p>
       </div>
-      <img class="secondpage__img" src="images/illustration-editor-desktop.svg" alt="" />
-    </div>
-  </section>
-  <!-- phonepage/thirdpage -->
-  <section class="phonepage">
-    <img src="images/illustration-phones.svg" alt="" class="phonepage__phone" />
-    <div class="phonepage__column">
-      <p class="phonepage__column__title">State of the Art Infrastructure</p>
-      <p class="phonepage__column__text">
-        With reliability and speed in mind, worldwide data centers provide the
-        backbone for ultra-fast connectivity. This ensures your site will load
-        instantly, no matter where your readers are, keeping your site
-        competitive.
-      </p>
-    </div>
-  </section>
+    </section>
 
-  <section class="thirdpage">
-    <div class="thirdpage__container">
-      <img src="images/illustration-laptop-desktop.svg" class="thirdpage__img" alt="" />
-      <div class="thirdpage__container__column">
-        <p class="thirdpage__container__column__text--bold">
-          Free, open, simple
-        </p>
-        <p class="thirdpage__container__column__text">
-          Blogr is a free and open source application backed by a large
-          community of helpful developers. It supports features such as code
-          syntax highlighting, RSS feeds, social media integration,
-          third-party commenting tools, and works seamlessly with Google
-          Analytics. The architecture is clean and is relatively easy to
-          learn.
-        </p>
-        <p class="thirdpage__container__column__text--bold">
-          Powerful tooling
-        </p>
-        <p class="thirdpage__container__column__text">
-          Batteries included. We built a simple and straightforward CLI tool
-          that makes customization and deployment a breeze, but capable of
-          producing even the most complicated sites.
-        </p>
+    <section class="thirdpage">
+      <div class="thirdpage__container">
+        <img
+          src="images/illustration-laptop-desktop.svg"
+          class="thirdpage__img"
+          alt=""
+        />
+        <div class="thirdpage__container__column">
+          <p class="thirdpage__container__column__text--bold">
+            Free, open, simple
+          </p>
+          <p class="thirdpage__container__column__text">
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+          <p class="thirdpage__container__column__text--bold">
+            Powerful tooling
+          </p>
+          <p class="thirdpage__container__column__text">
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- footoer -->
-  <section class="footer">
-    <img src="images/logo.svg" alt="" class="footer__logo" />
-    <div class="footer__container">
-      <div class="footer__container__list footer__container__list--product">
-        <p class="footer__container__list__title">Product</p>
-        <ul class="footer__container__list__product">
-          <li class="overview">Overview</li>
-          <li class="pricing">Pricing</li>
-          <li class="marketplace">Marketplace</li>
-          <li class="features">Features</li>
-          <li class="integrations">Integrations</li>
+    <!-- footoer -->
+    <section class="footer">
+      <img src="images/logo.svg" alt="" class="footer__logo" />
+      <div class="footer__container">
+        <div class="footer__container__list footer__container__list--product">
+          <p class="footer__container__list__title">Product</p>
+          <ul class="footer__container__list__product">
+            <li class="overview">Overview</li>
+            <li class="pricing">Pricing</li>
+            <li class="marketplace">Marketplace</li>
+            <li class="features">Features</li>
+            <li class="integrations">Integrations</li>
+          </ul>
+        </div>
+        <div class="footer__container__list footer__container__list--company">
+          <p class="footer__container__list__title">Company</p>
+          <ul class="footer__container__list__company">
+            <li class="about">About</li>
+            <li class="team">Team</li>
+            <li class="blog">Blog</li>
+            <li class="careers">Careers</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__container__list footer__container__list--connect">
+        <p class="footer__container__list__title">Connect</p>
+        <ul class="footer__container__list__connect">
+          <li class="contact">Contact</li>
+          <li class="newsletter">Newsletter</li>
+          <li class="linkedIn">LinkedIn</li>
         </ul>
       </div>
-      <div class="footer__container__list footer__container__list--company">
-        <p class="footer__container__list__title">Company</p>
-        <ul class="footer__container__list__company">
-          <li class="about">About</li>
-          <li class="team">Team</li>
-          <li class="blog">Blog</li>
-          <li class="careers">Careers</li>
-        </ul>
-      </div>
+    </section>
+
+    Product Overview Pricing Marketplace Features Integrations Company About
+    Team Blog Careers Connect Contact Newsletter LinkedIn Login Sign Up With
+    this functionality, you’re in full control. Product Overview Pricing
+    Marketplace Features Integrations Company About Team Blog Careers Connect
+    Contact Newsletter LinkedIn
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ronald Laz</a>.
     </div>
-    <div class="footer__container__list footer__container__list--connect">
-      <p class="footer__container__list__title">Connect</p>
-      <ul class="footer__container__list__connect">
-        <li class="contact">Contact</li>
-        <li class="newsletter">Newsletter</li>
-        <li class="linkedIn">LinkedIn</li>
-      </ul>
-    </div>
-  </section>
-
-  Product Overview Pricing Marketplace Features Integrations Company About
-  Team Blog Careers Connect Contact Newsletter LinkedIn Login Sign Up With
-  this functionality, you’re in full control. Product Overview Pricing
-  Marketplace Features Integrations Company About Team Blog Careers Connect
-  Contact Newsletter LinkedIn
-
-  <div class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
-      href="#">Ronald Laz</a>.
-  </div>
-  <script src="/script.js"></script>
-</body>
-
+    <script src="/script.js"></script>
+  </body>
 </html>
 
 <!-- this my fight siong -->gt
