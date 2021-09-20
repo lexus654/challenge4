@@ -1,7 +1,12 @@
-const rotateButton1 = document.querySelector("[data-rotate1]");
-const rotateButton2 = document.querySelector("[data-rotate2]");
-const rotateButton3 = document.querySelector("[data-rotate3]");
-
-rotateButton1.addEventListener("click", function () {
-  console.log(`hello`);
+const screen2 = document.getElementById("body");
+let imageChange = document.getElementById("imageChange");
+var elmnt = document.getElementById("body");
+var txt = elmnt.clientWidth;
+const imageChanger = function () {
+  if (txt <= 375) {
+    imageChange.src = "/images/illustration-laptop-mobile.svg";
+  }
+};
+screen2.addEventListener("resize", function () {
+  imageChanger();
 });
