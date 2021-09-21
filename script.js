@@ -1,4 +1,3 @@
-const screen2 = document.getElementById("body");
 let imageChange = document.getElementById("imageChange");
 var elmnt = document.getElementById("body");
 var txt = elmnt.clientWidth;
@@ -7,6 +6,7 @@ const imageChanger = function () {
     imageChange.src = "/images/illustration-laptop-mobile.svg";
   }
 };
-screen2.addEventListener("resize", function () {
+window.addEventListener("resize", function () {
+  console.log(txt);
   imageChanger();
 });
