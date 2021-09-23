@@ -11,10 +11,23 @@ window.addEventListener("resize", function () {
   imageChanger();
 });
 
+// test data on button 1
+const button1 = document.getElementById("btn1");
+const arw1 = document.getElementById("arrow1");
 // ON DESKTOP VIEW
 // TODO Nav bar
-
+// Functions
+const addStyles = function () {
+  arw1.style.transform = "rotate(180deg)";
+  button1.style.textDecoration = "underline";
+};
+const removeStyles = function () {
+  arw1.style.transform = "rotate(180deg)";
+  button1.style.textDecoration = "none";
+};
 // 1. on focus the list should be underlines
+button1.addEventListener("focus", addStyles);
+button1.addEventListener("blur", removeStyles);
 
 // 2. Open Modal
 

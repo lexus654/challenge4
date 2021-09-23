@@ -25,7 +25,7 @@
     .open {
       cursor: pointer;
     }
-    .open:focus-within {
+    .open:focus {
       transform: rotate(10deg);
       transition: all 0.5s ease-in-out;
     }
@@ -68,12 +68,17 @@
         }
         li {
           font-family: "Ubuntu", sans-serif;
-          font-weight: 700;
-          font-size: 1.1rem;
-          color: $White;
-          margin: 10px 20px;
+
           list-style: none;
         }
+      }
+      .firstpage__navbar__leftside__list__button {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: $White;
+        margin: 10px 20px;
+        background: none;
+        border: none;
       }
 
       // sign up and login
