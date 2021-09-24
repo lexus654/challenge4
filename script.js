@@ -13,21 +13,62 @@ window.addEventListener("resize", function () {
 
 // test data on button 1
 const button1 = document.getElementById("btn1");
+const button2 = document.getElementById("btn2");
+const button3 = document.getElementById("btn3");
 const arw1 = document.getElementById("arrow1");
+const arw2 = document.getElementById("arrow2");
+const arw3 = document.getElementById("arrow3");
 // ON DESKTOP VIEW
 // TODO Nav bar
 // Functions
-const addStyles = function () {
+
+// Refactor
+const addStyles1 = function () {
   arw1.style.transform = "rotate(180deg)";
   button1.style.textDecoration = "underline";
 };
-const removeStyles = function () {
+const removeStyles1 = function () {
   arw1.style.transform = "rotate(180deg)";
   button1.style.textDecoration = "none";
 };
+const keratin1 = function (btn) {
+  console.log("nagan");
+  btn.addEventListener("focus", addStyles1);
+  btn.addEventListener("blur", removeStyles1);
+};
+//
+const addStyles2 = function () {
+  arw2.style.transform = "rotate(180deg)";
+  button2.style.textDecoration = "underline";
+};
+const removeStyles2 = function () {
+  arw2.style.transform = "rotate(180deg)";
+  button2.style.textDecoration = "none";
+};
+const keratin2 = function (btn) {
+  console.log("nagan");
+  btn.addEventListener("focus", addStyles2);
+  btn.addEventListener("blur", removeStyles2);
+};
+//
+const addStyles3 = function () {
+  arw3.style.transform = "rotate(180deg)";
+  button3.style.textDecoration = "underline";
+};
+const removeStyles3 = function () {
+  arw3.style.transform = "rotate(180deg)";
+  button3.style.textDecoration = "none";
+};
+const keratin3 = function (btn) {
+  console.log("nagan");
+  btn.addEventListener("focus", addStyles3);
+  btn.addEventListener("blur", removeStyles3);
+};
+
+keratin1(button1);
+keratin2(button2);
+keratin3(button3);
 // 1. on focus the list should be underlines
-button1.addEventListener("focus", addStyles);
-button1.addEventListener("blur", removeStyles);
 
 // 2. Open Modal
 
