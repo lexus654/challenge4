@@ -19,6 +19,10 @@
         background-color: white;
         transition: ease-in-out, all 0.3s ease-in-out;
       }
+      #rotate:focus {
+        transform: rotate(180deg);
+        transition: all 0.3s ease-in-out;
+      }
       button:focus {
         transform: rotate(180deg);
         transition: all 0.3s ease-in-out;
@@ -38,7 +42,9 @@
     </style>
   </head>
   <body>
-    <button class="btn"><i class="fas fa-chevron-down"></i></button>
+    <button class="btn">
+      Hello <i id="rotate" class="fas fa-chevron-down"></i>
+    </button>
     <div id="list" class="list hide">
       <ul>
         <li>Hello</li>

@@ -28,7 +28,7 @@ const addStyles1 = function () {
   button1.style.textDecoration = "underline";
 };
 const removeStyles1 = function () {
-  arw1.style.transform = "rotate(180deg)";
+  arw1.style.removeProperty("transform");
   button1.style.textDecoration = "none";
 };
 const keratin1 = function (btn) {
@@ -42,7 +42,7 @@ const addStyles2 = function () {
   button2.style.textDecoration = "underline";
 };
 const removeStyles2 = function () {
-  arw2.style.transform = "rotate(180deg)";
+  arw2.style.removeProperty("transform");
   button2.style.textDecoration = "none";
 };
 const keratin2 = function (btn) {
@@ -56,7 +56,7 @@ const addStyles3 = function () {
   button3.style.textDecoration = "underline";
 };
 const removeStyles3 = function () {
-  arw3.style.transform = "rotate(180deg)";
+  arw3.style.removeProperty("transform");
   button3.style.textDecoration = "none";
 };
 const keratin3 = function (btn) {
