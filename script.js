@@ -18,6 +18,9 @@ const button3 = document.getElementById("btn3");
 const arw1 = document.getElementById("arrow1");
 const arw2 = document.getElementById("arrow2");
 const arw3 = document.getElementById("arrow3");
+const modal1 = document.getElementById("list1");
+const modal2 = document.getElementById("list2");
+const modal3 = document.getElementById("list3");
 // ON DESKTOP VIEW
 // TODO Nav bar
 // Functions
@@ -26,10 +29,12 @@ const arw3 = document.getElementById("arrow3");
 const addStyles1 = function () {
   arw1.style.transform = "rotate(180deg)";
   button1.style.textDecoration = "underline";
+  modal1.classList.remove("hide");
 };
 const removeStyles1 = function () {
   arw1.style.removeProperty("transform");
   button1.style.textDecoration = "none";
+  modal1.classList.add("hide");
 };
 const keratin1 = function (btn) {
   console.log("nagan");
@@ -40,10 +45,12 @@ const keratin1 = function (btn) {
 const addStyles2 = function () {
   arw2.style.transform = "rotate(180deg)";
   button2.style.textDecoration = "underline";
+  modal2.classList.remove("hide");
 };
 const removeStyles2 = function () {
   arw2.style.removeProperty("transform");
   button2.style.textDecoration = "none";
+  modal2.classList.add("hide");
 };
 const keratin2 = function (btn) {
   console.log("nagan");
@@ -54,10 +61,12 @@ const keratin2 = function (btn) {
 const addStyles3 = function () {
   arw3.style.transform = "rotate(180deg)";
   button3.style.textDecoration = "underline";
+  modal3.classList.remove("hide");
 };
 const removeStyles3 = function () {
   arw3.style.removeProperty("transform");
   button3.style.textDecoration = "none";
+  modal3.classList.add("hide");
 };
 const keratin3 = function (btn) {
   console.log("nagan");
