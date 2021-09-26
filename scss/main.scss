@@ -31,13 +31,15 @@
     }
     // modals
     .list {
-      width: 70px;
+      width: 100px;
       height: 100px;
       background-color: rgb(255, 255, 255);
       display: flex;
       justify-content: center;
       align-items: center;
       opacity: 10;
+      box-shadow: -4px 7px 5px 2px rgba(0, 0, 0, 0.39);
+      margin-left: 60px;
     }
 
     .list-pos1 {
